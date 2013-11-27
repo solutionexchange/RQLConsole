@@ -20,7 +20,7 @@
 		}
 	</style>
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="Rqlconnector.js"></script>
+	<script type="text/javascript" src="rqlconnector/Rqlconnector.js"></script>
 	<script type="text/javascript">
 		var LoginGuid = '<%= session("loginguid") %>';
 		var SessionKey = '<%= session("sessionkey") %>';
@@ -37,9 +37,9 @@
 
 			var strRQLXML = $('#rqltextarea').text();
 
-			RqlConnectorObj.SendRql(strRQLXML, false, function(data){
+			RqlConnectorObj.SendRql(strRQLXML, true, function(data){
 				$('#result').show();
-				$('#resulttextarea').text($(data).html());
+				$('#resulttextarea').text(data);
 			});
 
 			$('.form-actions').show();
