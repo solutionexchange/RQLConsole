@@ -56,7 +56,7 @@
 	<div class="navbar navbar-inverse">
 		<div class="navbar-inner">
 			<span class="brand">RQL Console</span>
-			<button class="btn btn-info pull-right" onclick="ShowSessions()">Sessions</button>
+			<a class="btn btn-info pull-right" href="sessions.asp" target="_blank">Sessions</a>
 		</div>
 	</div>
 	<textarea id="rqltextarea"></textarea>
