@@ -70,11 +70,7 @@
 	<div class="navbar navbar-inverse">
 		<div class="navbar-inner">
 			<span class="brand">RQL Console</span>
-<<<<<<< HEAD
 			<div class="btn btn-info pull-right" id="sessions">Sessions</div>
-=======
-			<a class="btn btn-info pull-right" href="sessions.asp" target="_blank">Sessions</a>
->>>>>>> origin/master
 		</div>
 	</div>
 	<textarea id="rqltextarea"></textarea>
