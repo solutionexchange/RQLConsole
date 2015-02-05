@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="expires" content="-1" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
