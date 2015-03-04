@@ -21,7 +21,7 @@ function RqlConsole(RqlConnectorObj) {
 RqlConsole.prototype.RunRql = function(RqlXml) {
 	var ThisClass = this;
 	
-	RqlConnectorObj.SendRql(RqlXml, true, function(data){
+	RqlConnectorObj.SendRql(RqlXml, false, function(data){
 		var ResultObj = {rql: data};
 		ThisClass.UpdateArea(ThisClass.TemplateRqlResult, ResultObj);
 	});
