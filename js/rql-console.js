@@ -14,6 +14,9 @@ function RqlConsole(RqlConnectorObj) {
 	
 	$('body').on('click', '#run', function(){
 		var RqlXml = $(ThisClass.SourceRqlTextArea).text();
+		if(RqlXml == '') {
+			RqlXml = $(ThisClass.SourceRqlTextArea).val();
+		}
 		ThisClass.RunRql(RqlXml);
 	});
 }
